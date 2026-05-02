@@ -403,15 +403,19 @@ span .topnewscol--header--day{
     background-color: rgba(85, 85, 119, .8);
 }
 .OFFICIAL_SOCIAL_MEDIA_ {
+    display: flex;
+    justify-content: center;
     font-family: 'Noto Sans', serif;
     font-size: 14px;
     line-height: 1.7em;
     font-weight: bold;
     color: #fff;
-    text-align: center !important;
     margin-bottom: 30px;
 }
 .medias ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #78eedd;
     font-family: 'Noto Sans', serif;
     text-decoration: none;
@@ -419,29 +423,21 @@ span .topnewscol--header--day{
     color: #000;
     text-align: center;
 }
+.medias ul li {
+    display: block;
+    gap: 30px 20px;
+}
 .medias {
-    width: 180px;
+    width: 18vw;
     height: 40px;
 }
-.medias ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
+
 .footer ul {
     padding: 0 3%;
     gap: 30px .5%;
 }
 
-.align-items-center {
-    align-items: center;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.flex {
+.flex-pc {
     display: flex;
 }
 
