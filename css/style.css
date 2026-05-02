@@ -412,10 +412,15 @@ span .topnewscol--header--day{
     color: #fff;
     margin-bottom: 30px;
 }
-.medias ul li a {
+.medias {
     display: flex;
+    flex-wrap: nowrap;
+}
+.medias ul li{
     justify-content: center;
     align-items: center;
+}
+.medias ul li a {
     background-color: #78eedd;
     font-family: 'Noto Sans', serif;
     text-decoration: none;
