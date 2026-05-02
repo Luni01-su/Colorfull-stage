@@ -413,13 +413,18 @@ span .topnewscol--header--day{
     margin-bottom: 30px;
 }
 .medias {
-    display: flex;
-    flex-wrap: nowrap;
+    width: 100%;
+    height: 50px;
 }
-.medias {
+.Media span {
     position: relative;
-    bottom: 30%;
-    left: 35rem;
+    top: 8px;
+    left: 20px;
+}
+.Media svg{
+    position: relative;
+    top: 8px;
+    left: 16px;
 }
 .medias ul li a {
     background-color: #78eedd;
@@ -427,12 +432,15 @@ span .topnewscol--header--day{
     text-decoration: none;
     border-radius: 20px;
     color: #000;
-    text-align: center;
-    gap: 30px;
+    width: 10vw;
+    height: 40px;
+    position: relative;
+    top: -20px;
+    left: 35vh;
 }
-.medias {
-    width: 40px;
-    height: 20px;
+.Media a{
+    display: flex;
+    align-items: baseline;
 }
 
 .footer ul {
