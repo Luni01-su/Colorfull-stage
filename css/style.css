@@ -459,25 +459,25 @@ span .topnewscol--header--day{
 .medias li a {
     list-style: none;
 }
-.medias span:hover svg:hover {
+.medias .Media li:hover {
     color:#fff;
 }
-.medias .X li:hover{
+.medias .Media .X li:hover{
     background-color: #000;
 }
-.medias .Facebook li:hover{
+.medias .Media .Facebook li:hover{
     background-color: #0000FF;
 }
-.medias .Instagram li:hover{
+.medias .Media .Instagram li:hover{
     background-color: #FF8C00;
 }
-.medias .Youtube li:hover{
+.medias .Media .Youtube li:hover{
     background-color: #FF0000;
 }
-.medias .Discord li:hover{
+.medias .Media .Discord li:hover{
     background-color: #0000CD;
 }
-.medias .Twitch li:hover{
+.medias .Media .Twitch li:hover{
     background-color: #9400D3;
 }
 .wrap-1280 {
