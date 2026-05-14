@@ -459,6 +459,13 @@ span .topnewscol--header--day{
 .medias li a {
     list-style: none;
 }
+.medias svg,span:hover {
+    color:#fff;
+}
+.X li:hover{
+    background-color: #000;
+}
+
 .wrap-1280 {
     max-width: 1280px;
     margin-right: auto;
