@@ -459,7 +459,7 @@ span .topnewscol--header--day{
 .medias li a {
     list-style: none;
 }
-.medias span,svg:hover {
+.medias span:hover svg:hover {
     color:#fff;
 }
 .medias .X li:hover{
