@@ -459,13 +459,27 @@ span .topnewscol--header--day{
 .medias li a {
     list-style: none;
 }
-.medias svg,span:hover {
+.medias li:hover {
     color:#fff;
 }
 .X li:hover{
     background-color: #000;
 }
-
+.Facebook li:hover{
+    background-color: #0000FF;
+}
+.Instagram li:hover{
+    background-color: #FF8C00;
+}
+.Youtube li:hover{
+    background-color: #FF0000;
+}
+.Discord li:hover{
+    background-color: #0000CD;
+}
+.Twitch li:hover{
+    background-color: #9400D3;
+}
 .wrap-1280 {
     max-width: 1280px;
     margin-right: auto;
