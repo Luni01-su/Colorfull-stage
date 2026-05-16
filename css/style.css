@@ -104,8 +104,8 @@ ul .submenu3 {
 .topnews{
     background-image: url(../img/top_news_bg.svg);
     background-repeat: no-repeat;
-    background-position: left -10px top 10px;
-    background-size: 60% auto;
+    background-position: top 10px;
+    background-size: 80% auto;
 }
 .NEWS h2 {
     font-family: 'Noto Sans', serif;
@@ -124,15 +124,24 @@ ul .submenu3 {
     flex-wrap: wrap;
     gap: 20px;
 }
-.-pin::before{
+.topnews-list li .-pin::before{
+    position: absolute;
     top: -4%;
     left: -4%;
+    width: 8%;
+    z-index: 1;
+    content: "";
 }
+
 .-pin img{
     width: 40px;
     height: 40px;
 }
+.flex {
+    display: flex;
+}
 .card {
+    position: relative;
     width: 100%;
     padding-bottom: 20px;
     border-radius: 6px;
@@ -210,7 +219,7 @@ span .topnewscol--header--day{
 }
 .button_container {
     width: 320px;
-    margin: 60px auto 0;
+    margin: 50px auto 0;
 }
 .button_container a {
     font-family: 'Noto Sans', serif;
@@ -459,26 +468,39 @@ span .topnewscol--header--day{
 .medias li a {
     list-style: none;
 }
-.medias .Media li:hover {
+.Media a:hover {
     color:#fff;
 }
-.medias .Media .X li:hover{
+.medias .Media a:hover {
+    color: #fff;
+}
+.medias ul li a:hover svg{
+    fill: #fff;
+    transition: 0.3ms;
+}
+.medias ul li:first-child a:hover{
     background-color: #000;
 }
-.medias .Media .Facebook li:hover{
-    background-color: #0000FF;
+.medias ul li:nth-child(2) a:hover{
+    background-color: #1E90FF;
 }
-.medias .Media .Instagram li:hover{
+.medias ul li:nth-child(3) a:hover{
     background-color: #FF8C00;
 }
-.medias .Media .Youtube li:hover{
+.medias ul li:nth-child(4) a:hover{
     background-color: #FF0000;
 }
-.medias .Media .Discord li:hover{
-    background-color: #0000CD;
+.medias ul li:nth-child(5) a:hover{
+    background-color: #4169E1;
 }
-.medias .Media .Twitch li:hover{
-    background-color: #9400D3;
+.medias ul li:nth-child(6) a:hover{
+    background-color: #9146FF;
+}
+.medias ul li:nth-child(6) a:hover svg{
+    fill: #fff;
+}
+.Media a:hover{
+    transition: 0.3s;
 }
 .wrap-1280 {
     max-width: 1280px;
