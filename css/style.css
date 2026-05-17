@@ -279,7 +279,6 @@ span .topnewscol--header--day{
     transition: 1s;
     max-width: 100%;
 }
-
 .characters-right img{
     width: 100%;
 }
@@ -287,7 +286,6 @@ span .topnewscol--header--day{
     width: 40vw;
     height: 273px;
 }
-
 .characters-left {
   position: relative;
   min-height: 320px;
@@ -295,7 +293,6 @@ span .topnewscol--header--day{
   transition: 1s;
   background: url(../img/top_bnr2_bg_ver02.jpg) no-repeat center bottom/cover;
 }
-
 .characters-left .characters {
     position: absolute;
     bottom: 0px;
@@ -329,7 +326,6 @@ span .topnewscol--header--day{
   transform: translate(-50%, -50%) scale(0.8);
     transition: 1s;
 }
-
 
 .vivid_bad_squad {
     background: url(../img/top_bnr3_bg_ver02.jpg) no-repeat center bottom/cover;
