@@ -47,21 +47,32 @@ img {
     font-family: 'Noto Sans', serif;
     font-weight: bold;
 }
+ li .ABOUTGAME{
+    position: relative;
+}
 .knopki a:hover {
     text-decoration: underline;
     transition: 1s;
 }
 ul .submenu {
     display: none;
+    position: absolute;
+    top: 30px;
 }
 .submenu {
     background-color: rgba(244, 244, 244, .8);
 }
-.ABOUTGAME:hover .submenu {
+
+ .ABOUTGAME:hover > .submenu {
     display: block;
+}
+li .CHARACTERS{
+    position: relative;
 }
 ul .submenu2 {
     display: none;
+    position: absolute;
+    top: 30px;
 }
 .submenu2 {
     background-color: rgba(244, 244, 244, .8);
@@ -72,11 +83,13 @@ ul .submenu2 {
 }
 ul .submenu3 {
     display: none;
+    position: absolute;
+    top: 30px;
 }
 .submenu3 {
     background-color: rgba(244, 244, 244, .8);
 }
-.MEDIA:hover .submenu3 {
+ .MEDIA:hover .submenu3 {
     display: block;
 }
 .main_container {
@@ -244,141 +257,139 @@ span .topnewscol--header--day{
 .over-flow {
     overflow: hidden;
 }
-.virtual_singer {
-    background: url(../img/top_bnr1_bg_ver02.jpg) no-repeat center/cover;
-    min-height: 25px;
-    display: flex;
-    flex-direction: row-reverse;
-    filter: brightness(60%)
+.card_singer{
+    max-height: 320px;
 }
-.virtual_singer .name img {
-    align-items: center;
-    width: 34%;
-    height: auto;
+.characters-right {
+    background: url(../img/top_bnr1_bg_ver02.jpg) no-repeat center bottom/cover;
     position: relative;
-    top: 80px;
-    left: 340px;
-}
-.virtual_singer .characters img {
-    opacity: 0;
-    height: 17vw;
-    position: relative;
-    bottom: -5px;
-}
-.Leo_need {
-    background: url(../img/top_bnr2_bg_ver02.jpg) no-repeat center/cover;
-    min-height: 15vw;
-    display: flex;
-    filter: brightness(60%)
+    min-height: 320px;
+    transition: 1s;
+    filter: brightness(0.7)
 }
 
-.Leo_need .name img{
-    width: 15%;
-    height: 100px;
-    position: fixed;
-    top: 80px;
-    left: 41vw;
-}
-.Leo_need .characters img {
+.characters-right .characters{
+    position: absolute;
+    bottom: 0;
+    left: auto !important;
+    right: 0 !important;
     opacity: 0;
-    height: 17vw;
-    position: relative;
-    bottom: -5px;
-    width: 42vw;
+    filter: brightness(0.2); 
+    transform: translateX(100%); 
+    transition: 1s;
+    max-width: 100%;
 }
 
+.characters-right img{
+    width: 100%;
+}
+.characters img{
+    width: 40vw;
+    height: 273px;
+}
+
+.characters-left {
+  position: relative;
+  min-height: 320px;
+  filter: brightness(0.7);
+  transition: 1s;
+  background: url(../img/top_bnr2_bg_ver02.jpg) no-repeat center bottom/cover;
+}
+
+.characters-left .characters {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    max-width: 40%;
+    opacity: 0;
+    transform: translateX(-350px);
+    transition: 1s;
+}
+.characters-left .name img{
+    width: 100%;
+}
+.characters-left .characters img{
+    width: auto;
+    height: 225px;
+}
 .MORE_MORE_JUMP {
-    background: url(../img/top_bnr6_bg_ver02.jpg) no-repeat center/cover;
-    min-height: 25vh;
-    display: flex;
-    flex-direction: row-reverse;
-    filter: brightness(60%)
+  background: url(../img/top_bnr6_bg_ver02.jpg) no-repeat;
 }
-.MORE_MORE_JUMP .name img {
-    display: flex;
-    align-items: center;
-    width: 34%;
-    height: auto;
-    position: relative;
-    top: 80px;
-    left: 28.4vw;
+
+.MORE_MORE_JUMP .characters img{
+    width: auto;
+    height: 250px;
 }
-.MORE_MORE_JUMP .characters img {
-    opacity: 0;
-    height: 17vw;
-    position: relative;
-    bottom: -5px;
-    width: 45vw;
+
+.name {
+  position: absolute;
+  max-width: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+    transition: 1s;
 }
+
 
 .vivid_bad_squad {
-    background: url(../img/top_bnr3_bg_ver02.jpg) no-repeat center/cover;
-    min-height: 25vh;
-    display: flex;
-    filter: brightness(60%)
+    background: url(../img/top_bnr3_bg_ver02.jpg) no-repeat center bottom/cover;
 }
-.vivid_bad_squad .name img {
-    align-items: center;
-    width: 34%;
-    height: auto;
-    position: relative;
-    top: 80px;
+
+.vivid_bad_squad .characters{
+    max-width: 100%;
 }
-.vivid_bad_squad .characters img {
-    opacity: 0;
-    height: 17vw;
-    position: relative;
-    bottom: -5px;
-    width: 42vw;
+.vivid_bad_squad .characters img{
+    width: 40vw;
+    height: 260px;
 }
 .wonderlands_showtime {
     background: url(../img/top_bnr4_bg_ver02.jpg) no-repeat center/cover;
-    min-height: 25vh;
-    display: flex;
-    flex-direction: row-reverse;
-    filter: brightness(60%)
+
 }
-.wonderlands_showtime .name img {
-    width: 34%;
-    height: auto;
-    position: relative;
-    top: 100px;
-    left: 380px;
+.wonderlands_showtime .characters {
+    max-width: 100%;
 }
-.wonderlands_showtime .characters img {
-    opacity: 0;
-    height: 17vw;
-    position: relative;
-    bottom: -5px;
+.wonderlands_showtime .characters img{
+    width: auto;
+    height: 260px;
 }
 .Nightcord {
     background: url(../img/top_bnr5_bg_ver02.jpg) no-repeat center/cover;
-    min-height: 25vh;
-    display: flex;
-    filter: brightness(60%)
 }
-.Nightcord .name img {
-    align-items: center;
-    width: 34%;
-    height: auto;
-    position: relative;
-    top: 80px;
-    left: 10vw;
+.Nightcord .characters {
+    max-width: 100%;
+    max-height: 100%;
 }
-.Nightcord .characters img {
-    opacity: 0;
-    height: 17vw;
-    position: relative;
-    bottom: -5px;
+.Nightcord .characters img{
+    width: 100%;
+    height: 260px;
 }
- .card_singer div:hover {
-    transition: 1s;
-    transform: scale(1.1);
-    filter: brightness(100%);
+.characters-right:hover > .characters {
+  opacity: 1;
+  transform: translateX(0);
+  filter: brightness(1);
 }
-.card_singer .characters img:hover{
-    opacity: 1;
-    transition: 1s;
+.characters-right:hover > .name {
+  transform: translate(-50%, -50%) scale(1);
+}
+.characters-right:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
+  transition: 1s;
+}
+.characters-left:hover > .characters {
+  opacity: 1;
+  transform: translateX(0) scale(1.1);
+  filter: brightness(1);
+}
+
+.characters-left:hover > .name {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.characters-left:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
 }
 .autors {
     padding: 30px 20px;
